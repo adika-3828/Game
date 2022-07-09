@@ -65,7 +65,6 @@ $("body").keypress(function(ev) {
 
 $(".btn").click(function() {
 var $this = $(this);
-  // pressd.push("#" + $this.attr("id"));
   pressd.push($this.attr("id"));
   $this.addClass("pressed")
   setTimeout(function() {
