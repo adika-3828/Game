@@ -39,7 +39,6 @@ function start() {
     sound.play();
   }, 600);
   ans.push(buttonColours[num]);
-  console.log("start berakhir, ans = " + ans);
 }
 
 function gameOver() {
