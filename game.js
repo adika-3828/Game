@@ -11,12 +11,9 @@ function nextSequence() {
 
 
 function checkAns(i) {
-  console.log("check ans ----- 5");
 
   for (i; i < ans.length; i++) {
-    console.log(i)
     if (ans[i] !== pressd[i] && i < pressd.length) {
-      console.log("masuk gameover")
       return gameOver();
     } else if (ans.length - 1 === i && ans[i] === pressd[i]){
       return start();
@@ -24,7 +21,6 @@ function checkAns(i) {
 }
 
 function start() {
-  console.log("start jalan");
   pressd = [];
   stat = "udh-a";
   gameov = "blm-kalah";
@@ -52,7 +48,6 @@ pressd = [];
 stat = "blm-a";
 var sound = new Audio("sounds/wrong.mp3");
 sound.play();
-console.log("game over, ans = " + ans);
 $("body").addClass("game-over");
 setTimeout(function() {
   $("body").removeClass("game-over");
